@@ -9,11 +9,11 @@
 
   }
 
-div{
+.Anim{
   max-width: 900px;
   max-height: 1000px;
   animation: animation 5s;
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite;
 }
 
 @keyframes animationBody {
@@ -37,7 +37,7 @@ div{
   }
 }
 
-body{
+#index{
   animation: animationBody 5s;
   animation-iteration-count: infinite;
 }
