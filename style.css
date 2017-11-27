@@ -4,17 +4,40 @@
   }
 
   50%{
-    transform: translateX(100%);
+    transform: translateX(100%) rotate(180deg);
   }
 
-  99%{
-    transform:  rotate(360deg);
+  }
+
+div{
+  max-width: 900px;
+  max-height: 1000px;
+  animation: animation 5s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes animationBody {
+  0% {
+    background-color: #22c1c3;
+  }
+
+  50%{
+    background-color: #fdbb2d;
+  }
+
+  75%{
+    background-color: #ff9966;
+  }
+
+  90%{
+    background-color: #ff5e62;
+  }
+  100%{
+    background-color: #22c1c3;
   }
 }
 
-div{
-  max-width: 1000px;
-  max-height: 1000px;
-  animation: animation 5s;
+body{
+  animation: animationBody 5s;
   animation-iteration-count: infinite;
 }
