@@ -1,0 +1,20 @@
+@keyframes animation {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50%{
+    transform: translateX(100%);
+  }
+
+  99%{
+    transform:  rotate(360deg);
+  }
+}
+
+div{
+  max-width: 1000px;
+  max-height: 1000px;
+  animation: animation 5s;
+  animation-iteration-count: infinite;
+}
