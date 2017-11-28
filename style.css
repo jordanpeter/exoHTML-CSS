@@ -1,3 +1,8 @@
+button{
+  margin-top: 10px;
+}
+
+
 @keyframes animation {
   0% {
     transform: translateX(0px);
@@ -9,11 +14,11 @@
 
   }
 
-div{
+.Anim{
   max-width: 900px;
   max-height: 1000px;
   animation: animation 5s;
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite;
 }
 
 @keyframes animationBody {
@@ -37,7 +42,21 @@ div{
   }
 }
 
-body{
+#index{
   animation: animationBody 5s;
   animation-iteration-count: infinite;
+}
+
+/* Fin de l'animation première page */
+
+tr:nth-child(odd){ /* nth-child(odd) veut dire qu'il n'appliquera la demande qu'au "tr" impair (ligne 1,3 etc du tableau) */
+  background-color: silver;
+}
+
+.boy{
+  color: green;
+}
+
+.girl{
+  color: violet;
 }
